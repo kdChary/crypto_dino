@@ -8,6 +8,11 @@
   font-family: monospace;
   color: #49fff9;
 }
+@media (min-width: 768px) {
+  .nav-small {
+    display: none;
+  }
+}
 .app-details {
   display: flex;
   align-items: center;

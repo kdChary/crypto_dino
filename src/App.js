@@ -8,7 +8,7 @@ import EmptyPage from "./components/EmptyPage";
 import Sidebar from "./components/Sidebar";
 
 class App extends Component {
-  state = { activeTab: "" };
+  state = { activeTab: "HOME" };
   changeTab = (val) => {
     this.setState({ activeTab: val });
   };
