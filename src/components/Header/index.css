@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: monospace;
-  color: #f4f5cf;
+  color: #49fff9;
 }
 .app-details {
   display: flex;
@@ -33,6 +33,57 @@
   margin-right: 3px;
 }
 .nav-option-button {
+  display: inline-block;
   border: none;
   background-color: transparent;
+}
+
+.popup-menu {
+  width: 215px;
+  height: 235px;
+  border: solid 1px #333333;
+  background-color: #333333;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px 0 #1a1e1c;
+
+  display: flex;
+  flex-direction: column;
+}
+.close-btn {
+  align-self: flex-end;
+  color: #fffcef;
+  font-size: 21px;
+  /* font-weight: 900; */
+  border: none;
+  background-color: transparent;
+  margin-bottom: -5px;
+}
+.nav-icon {
+  font-size: 19px;
+  color: #fffff3;
+  transition: 1s ease-in-out;
+}
+.nav-icon:hover {
+  rotate: 135deg;
+  color: #78f635;
+}
+
+.menu-icon {
+  font-size: 19px;
+  color: #fffff3;
+  transition: 1s ease-in-out;
+}
+.menu-icon:hover {
+  rotate: 90deg;
+  color: #78f635;
+}
+
+.profile-icon {
+  font-size: 19px;
+  color: #fffff3;
+  transition: 1s ease-in-out;
+}
+.profile-icon:hover {
+  font-size: 21px;
+  color: #78f635;
 }
