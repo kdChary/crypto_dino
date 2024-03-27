@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-import { RiBuildingFill, RiQuestionLine } from "react-icons/ri";
+import { RiBuildingFill } from "react-icons/ri";
 import { HiCube } from "react-icons/hi";
 import { GiEmptyHourglass, GiWallet } from "react-icons/gi";
-import { BsPersonCircle } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
-import { IoMdNotifications } from "react-icons/io";
-import { BiDotsVerticalRounded } from "react-icons/bi";
 
 import "./index.css";
 import AppContext from "../../context";
@@ -137,34 +134,10 @@ const MenuList = () => (
               </button>
             </li>
           </Link>
-
-          <ul className="large-options">
-            <Link to="/empty-page">
-              <li className="large-optn-items">
-                <button className="large-optn-btn">
-                  <RiQuestionLine color="#fffcc4" /> FAQ's
-                </button>
-              </li>
-            </Link>
-
-            <Link to="/empty-page">
-              <li className="large-optn-items">
-                <button className="large-optn-btn">
-                  <IoMdNotifications /> Notifications
-                </button>
-              </li>
-            </Link>
-
-            <Link to="/profile">
-              <li className="large-optn-items">
-                <BsPersonCircle /> Profile <BiDotsVerticalRounded />
-              </li>
-            </Link>
-          </ul>
         </ul>
       );
     }}
   </AppContext.Consumer>
 );
 
-export default MenuList;
+export default withRouter(MenuList);

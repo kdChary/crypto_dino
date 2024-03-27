@@ -15,16 +15,11 @@ class Home extends Component {
   state = {
     responseStatus: fetchStatusConst.initial,
     populationData: {},
-    activeTab: "HOME",
   };
 
   componentDidMount() {
     this.getPopulation();
   }
-
-  changeTab = (value) => {
-    this.setState({ activeTab: value });
-  };
 
   getPopulation = async () => {
     this.setState({ responseStatus: fetchStatusConst.inProgress });
@@ -39,21 +34,19 @@ class Home extends Component {
   render() {
     const { activeTab } = this.state;
     return (
-      <AppContext.Provider value={{ activeTab, changeTab: this.changeTab }}>
-        <>
-          <Header />
-          <div className="home-bg">
-            <div className="home-content">
-              <h3 className="welcome-msg">
-                Hello <span className="name">Sherry Johnson</span> 👋
-              </h3>
-              <p className="welcome-greeting">
-                Welcome to <span className="greeting">crypto_dino</span>
-              </p>
-            </div>
+      <>
+        <Header />
+        <div className="home-bg">
+          <div className="home-content">
+            <h3 className="welcome-msg">
+              Hello <span className="name">Sherry Johnson</span> 👋
+            </h3>
+            <p className="welcome-greeting">
+              Welcome to <span className="greeting">crypto_dino</span>
+            </p>
           </div>
-        </>
-      </AppContext.Provider>
+        </div>
+      </>
     );
   }
 }

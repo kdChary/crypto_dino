@@ -36,6 +36,7 @@
   display: inline-block;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 .popup-menu {
