@@ -1,11 +1,12 @@
 import { Route, Switch } from "react-router-dom";
 import { Component } from "react";
-// https://assets.ccbp.in/frontend/react-js/sherry-jhonson-img.png
+
 import "./App.css";
 import AppContext from "./context";
 import Home from "./components/HomePage";
 import EmptyPage from "./components/EmptyPage";
 import Sidebar from "./components/Sidebar";
+import Profile from "./components/Profile";
 
 class App extends Component {
   state = { activeTab: "HOME" };
@@ -22,7 +23,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/history" component={EmptyPage} />
           <Route exact path="/notifications" component={EmptyPage} />
-          <Route exact path="/1" component={Sidebar} />
+          <Route exact path="/profile" component={Profile} />
         </Switch>
       </AppContext.Provider>
     );
