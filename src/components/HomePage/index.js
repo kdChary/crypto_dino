@@ -1,6 +1,7 @@
 import { Component } from "react";
 
 import "./index.css";
+import Header from "../Header";
 
 const fetchStatusConst = {
   initial: "INITIAL",
@@ -28,9 +29,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home-bg">
-        <h1>Yet to render !</h1>
-      </div>
+      <>
+        <Header />
+        <div className="home-bg">hello!!</div>
+      </>
     );
   }
 }
