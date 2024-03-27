@@ -1,6 +1,6 @@
 .menu-list {
   width: 100%;
-  height: 170px;
+  height: 180px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -28,14 +28,15 @@
   margin: 0;
   margin-left: 7px;
   font-size: 13px;
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: 600;
 }
 
 .menu-item {
   list-style-type: none;
   display: flex;
   align-items: center;
+  /* margin-bottom: 11px; */
+  padding-left: 11px;
 }
 
 .large-options {
@@ -51,4 +52,8 @@
   .large-options {
     display: flex;
   }
+}
+.tab-active {
+  background-color: #333333;
+  color: #2ab42a;
 }
