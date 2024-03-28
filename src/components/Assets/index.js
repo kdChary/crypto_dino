@@ -60,7 +60,7 @@ class Assets extends Component {
             ) : (
               <>
                 <div className="cryptocurrency-list-header">
-                  <h1 className="list-title">Cryptocurrency Tracker</h1>
+                  <h1 className="list-title">Assets</h1>
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/cryptocurrency-bg.png"
                     alt="crypocurrency"
