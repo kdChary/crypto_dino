@@ -7,6 +7,7 @@ import Home from "./components/HomePage";
 import EmptyPage from "./components/EmptyPage";
 import Sidebar from "./components/Sidebar";
 import Profile from "./components/Profile";
+import Asset from "./components/Assets";
 
 class App extends Component {
   state = { activeTab: "HOME" };
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path="/history" component={EmptyPage} />
           <Route exact path="/notifications" component={EmptyPage} />
           <Route exact path="/profile" component={Profile} />
+          <Route exact path="/assets" component={Assets} />
         </Switch>
       </AppContext.Provider>
     );
