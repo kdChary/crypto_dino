@@ -19,7 +19,8 @@
     "recharts": "^2.12.3",
     "surge": "^0.23.1",
     "web-vitals": "^2.1.4",
-    "web3": "^4.7.0"
+    "web3": "^4.7.0",
+    "webpack": "^5.91.0"
   },
   "scripts": {
     "start": "react-scripts start",
