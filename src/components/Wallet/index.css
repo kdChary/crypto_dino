@@ -15,3 +15,29 @@
   font-family: "Roboto";
   color: aliceblue;
 }
+
+.connect-btn {
+  padding: 5px 11px;
+  align-self: center;
+  border: solid 3px #2a2bff;
+  border-radius: 4px;
+  background-color: #2a2bff;
+  color: #fffcff;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.failed {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  color: #ff0000;
+}
+.success {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(43, 240, 17);
+  font-style: italic;
+}
