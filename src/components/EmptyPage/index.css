@@ -7,6 +7,22 @@
   /* justify-content: space-around; */
   align-items: center;
 }
+@media (min-width: 768px) {
+  .empty-page-bg {
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+  }
+}
+.empty-page-contents {
+  background-color: #181818;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+}
 
 .empty-image {
   width: 230px;

@@ -16,6 +16,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "5.0.1",
     "reactjs-popup": "^2.0.6",
+    "recharts": "^2.12.3",
     "surge": "^0.23.1",
     "web-vitals": "^2.1.4"
   },

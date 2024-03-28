@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   background-color: #0b0b0b;
   background-size: cover;
   font-family: "Roboto";
@@ -19,11 +19,13 @@
 }
 
 .home-content {
-  width: 90%;
+  width: 100%;
   padding: 5px;
   /* align-self: center; */
   display: flex;
   flex-direction: column;
+  /* overflow: auto; */
+  scroll-behavior: smooth;
 }
 
 .greeting-user {
@@ -33,6 +35,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .greeting-user {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
 }
 
 .welcome-msg {
@@ -88,10 +96,68 @@
 .start-trading-btn:hover {
   box-shadow: 0 4px 18px 0 #545454;
 }
-
+@media (max-width: 767px) {
+  .start-trading-btn {
+    padding: 3px 9px;
+    font-size: 9px;
+  }
+}
 /* ---- dummy code ----- */
 .fill-space1 {
   width: 450px;
   height: 450px;
   background-color: #313131;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11px;
+}
+.hide {
+  display: none;
+}
+@media (min-width: 767px) {
+  .show {
+    display: none;
+  }
+  .hide {
+    display: flex;
+  }
+}
+
+.home-assets {
+  margin-top: -43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.home-asset-item {
+  width: 56px;
+  height: 56px;
+  font-size: 33px;
+  color: #fcf3ff;
+  border: solid 3px #313131;
+  background-color: #313131;
+  border-radius: 7px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .home-assets {
+    margin-top: 43px;
+  }
+  .home-asset-item {
+    width: 110px;
+    height: 110px;
+  }
+}
+.info {
+  text-align: center;
+  font-size: 9px;
+  color: #ccc;
 }
