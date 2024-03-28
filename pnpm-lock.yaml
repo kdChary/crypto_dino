@@ -7,6 +7,7 @@ specifiers:
   chalk: 4.1.0
   enzyme: 3.11.0
   msw: ^2.2.12
+  pnpm: '8'
   react: ^18.2.0
   react-dom: ^18.2.0
   react-icons: ^5.0.1
@@ -27,6 +28,7 @@ dependencies:
   chalk: 4.1.0
   enzyme: 3.11.0
   msw: 2.2.12
+  pnpm: 8.15.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 5.0.1_react@18.2.0
@@ -8686,6 +8688,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 3.0.0
+    dev: false
+
+  /pnpm/8.15.5:
+    resolution: {integrity: sha512-sFGjLH5pWDO4SSbTspuMylclS1ifBknYmcbp0O22cLkex+KkNFm65zdZu1zmGcMmbxFr+THOItHvF1mn5Fqpbw==}
+    engines: {node: '>=16.14'}
+    hasBin: true
     dev: false
 
   /possible-typed-array-names/1.0.0:
