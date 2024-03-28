@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -13,8 +13,13 @@
   align-items: center;
 }
 
-.app-logo {
+.assets-logo {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .assets-logo {
+    width: 351px;
+  }
 }
 
 .list-title {
@@ -24,7 +29,30 @@
 .cryptocurrency-item-list {
   list-style-type: none;
   padding: 9px 5px;
-  border: solid 3px #00e7ff;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border: none;
+  border-top: solid 3px #00e7ff;
+  border-bottom: solid 3px #00e7ff;
+
   border-radius: 9px;
   width: 90%;
+  height: 275px;
+}
+
+.asset-bg {
+  width: 100%;
+  height: 90vh;
+  background-color: #010101;
+}
+@media (min-width: 768px) {
+  .asset-bg {
+    width: auto;
+    display: flex;
+    height: 100vh;
+  }
 }

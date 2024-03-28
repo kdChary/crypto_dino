@@ -18,7 +18,7 @@
   align-items: center;
 
   /* padding-top: 34px; */
-  padding-bottom: 23px;
+  /* padding-bottom: 9px; */
   border-right: solid 5px #333333;
   border-radius: 0 9px 9px 0;
 }
@@ -43,6 +43,7 @@
   letter-spacing: 0.7px;
   line-height: 1.5;
   margin-left: 5px;
+  margin-right: 3px;
 }
 .side-logo {
   width: 48px;

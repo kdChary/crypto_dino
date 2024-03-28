@@ -1,0 +1,60 @@
+.cryptocurrency-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: solid 3px #313131;
+  background-color: #313131;
+  border-radius: 5px;
+  width: 114px;
+  height: 114px;
+  margin: 5px;
+}
+
+.currency-details {
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  /* width: 35%; */
+  align-self: center;
+}
+
+.currency-logo {
+  width: 21px;
+  height: 21px;
+}
+@media (min-width: 768px) {
+  .currency-logo {
+    width: 45px;
+    height: 45px;
+  }
+  .cryptocurrency-item {
+    width: 125px;
+    height: 135px;
+  }
+}
+
+.name-card {
+  width: 50%;
+}
+.currency-name {
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.currency-value-card {
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  align-self: center;
+  /* width: 35%; */
+}
+.currency-value {
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 500;
+}

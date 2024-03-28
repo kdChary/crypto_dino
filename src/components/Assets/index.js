@@ -4,6 +4,8 @@ import { Rings } from "react-loader-spinner";
 
 import CryptocurrencyItem from "../AssetItem";
 import "./index.css";
+import Header from "../Header";
+import Sidebar from "../Sidebar";
 
 class Assets extends Component {
   state = { isLoading: true, cryptoData: [] };
@@ -46,27 +48,33 @@ class Assets extends Component {
   render() {
     const { isLoading } = this.state;
     return (
-      <div className="currencies-list-container">
-        {isLoading ? (
-          <div data-testid="loader">
-            <Rings color="#ffffff" height={80} width={80} />
+      <>
+        <Header />
+        <div className="asset-bg">
+          <Sidebar />
+          <div className="currencies-list-container">
+            {isLoading ? (
+              <div data-testid="loader">
+                <Rings color="#78f0ff" height={90} width={90} radius={11} />
+              </div>
+            ) : (
+              <>
+                <div className="cryptocurrency-list-header">
+                  <h1 className="list-title">Cryptocurrency Tracker</h1>
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/cryptocurrency-bg.png"
+                    alt="crypocurrency"
+                    className="assets-logo"
+                  />
+                </div>
+                <ul className="cryptocurrency-item-list">
+                  {this.renderCryptocurrencyItem()}
+                </ul>
+              </>
+            )}
           </div>
-        ) : (
-          <>
-            <div className="cryptocurrency-list-header">
-              <h1 className="list-title">Cryptocurrency Tracker</h1>
-              <img
-                src="https://assets.ccbp.in/frontend/react-js/cryptocurrency-bg.png"
-                alt="crypocurrency"
-                className="app-logo"
-              />
-            </div>
-            <ul className="cryptocurrency-item-list">
-              {this.renderCryptocurrencyItem()}
-            </ul>
-          </>
-        )}
-      </div>
+        </div>
+      </>
     );
   }
 }

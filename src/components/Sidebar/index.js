@@ -6,7 +6,6 @@ import { IoMdNotifications } from "react-icons/io";
 
 import "./index.css";
 import MenuList from "../MenuList";
-import AppContext from "../../context";
 
 const Sidebar = () => (
   <nav className="side-bar">
@@ -58,10 +57,9 @@ const Sidebar = () => (
 );
 
 export default Sidebar;
-{
-  /* <AppContext.Consumer>
+
+/* <AppContext.Consumer>
     {(value) => {
       const { activeTab, changeTab } = value;
       return ( );}}
   </AppContext.Consumer> */
-}

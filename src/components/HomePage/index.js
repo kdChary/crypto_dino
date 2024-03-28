@@ -16,7 +16,6 @@ import { SiDogecoin } from "react-icons/si";
 import { SiLitecoin } from "react-icons/si";
 
 import "./index.css";
-import AppContext from "../../context";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
 
@@ -157,7 +156,6 @@ class Home extends Component {
   };
 
   render() {
-    const { activeTab } = this.state;
     return (
       <>
         <Header />

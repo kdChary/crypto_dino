@@ -13,13 +13,15 @@ const CryptocurrencyItem = (props) => {
     <li className="cryptocurrency-item">
       <div className="currency-details">
         <img src={currencyLogo} alt={currencyName} className="currency-logo" />
-        <div className="name-card ">
-          <p className="currency-name">{currencyName}</p>
-        </div>
+
+        <p className="currency-name">{currencyName}</p>
       </div>
       <div className="currency-value-card">
-        <p className="currency-value">{usdValue}</p>
-        <p className="currency-value">{euroValue}</p>
+        <p className="currency-value">&#36; {usdValue}</p>
+        <p className="currency-value">&euro; {euroValue}</p>
+        <p className="currency-value">
+          &pound; {parseInt(euroValue) + parseInt(usdValue) / 2}
+        </p>
       </div>
     </li>
   );

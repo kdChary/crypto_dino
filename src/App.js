@@ -5,9 +5,8 @@ import "./App.css";
 import AppContext from "./context";
 import Home from "./components/HomePage";
 import EmptyPage from "./components/EmptyPage";
-import Sidebar from "./components/Sidebar";
 import Profile from "./components/Profile";
-import Asset from "./components/Assets";
+import Assets from "./components/Assets";
 
 class App extends Component {
   state = { activeTab: "HOME" };
