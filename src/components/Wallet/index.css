@@ -12,13 +12,16 @@
 }
 
 .wallet-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto";
-  color: aliceblue;
+  color: #ffffff;
 }
 
 .connect-btn {
   padding: 5px 11px;
-  align-self: center;
   border: solid 3px #2a2bff;
   border-radius: 4px;
   background-color: #2a2bff;

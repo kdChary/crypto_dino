@@ -20,11 +20,20 @@ class MetaMaskIntegration extends Component {
         await window.ethereum.request({ method: "eth_requestAccounts" });
         const web3 = new Web3(window.ethereum);
         // Check if connected
-        const networkId = await web3.eth.net.getId();
+
+        try {
+          await window.ethereum.request({ method: "eth_requestAccounts" });
+        } catch (error) {
+          // User denied account access
+          console.log(error);
+        }
 
         const accounts = await web3.eth.getAccounts();
         if (accounts.length > 0) {
           this.setState({ isConnected: true, errorMessage: "" });
+          const networkId = await web3.eth.net.getId();
+          const userAddress = accounts[0];
+          console.log(userAddress);
         }
       } else {
         this.setState({
