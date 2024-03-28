@@ -46,7 +46,7 @@
   font-style: oblique;
 }
 .user-accounts {
-  border: solid 5px #323232;
+  /* border: solid 5px #323232; */
   /* width: 115px; */
   display: flex;
   flex-direction: column;
@@ -87,4 +87,15 @@
   border-radius: 9px;
   box-shadow: 0 4px 16px 0 #323232;
   margin: 2px;
+}
+@media (min-width: 768px) {
+  .invested-item {
+    width: 105px;
+    height: 105px;
+    flex-wrap: wrap;
+  }
+}
+
+.invested-item:hover {
+  box-shadow: inset 2px 4px 16px 2px #fffb02;
 }

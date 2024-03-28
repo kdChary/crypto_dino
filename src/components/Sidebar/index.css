@@ -108,6 +108,8 @@
   align-items: center;
   outline: none;
   cursor: pointer;
+  font-size: 13px;
+  transition: 1s ease-in-out;
 }
 .footer-icons {
   font-size: 21px;
@@ -116,7 +118,6 @@
 }
 .footer-text {
   font-family: "Roboto";
-  font-size: 13px;
   font-weight: 600;
 }
 .footer-profile-section {
@@ -128,6 +129,8 @@
   align-items: center;
 
   color: #fff4ff;
+  cursor: pointer;
+  transition: 1s ease-in-out;
 }
 .dots {
   font-size: 15px;
@@ -136,5 +139,9 @@
 .footer-icons:hover {
   animation: alternate-reverse;
   font-size: 23px;
+  color: #78f0ff;
+}
+.footer-btn:hover {
+  font-size: 15px;
   color: #78f0ff;
 }

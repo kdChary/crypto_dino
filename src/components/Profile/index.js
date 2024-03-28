@@ -38,11 +38,11 @@ const Profile = () => {
             </li>
             <li className="account-item">
               <p className="account-data">Invested : </p>
-              <span className="amount">$100.00</span>
+              <span className="amount">$10.00</span>
             </li>
             <li className="account-item">
               <p className="account-data">Stocks Owned : </p>
-              <span className="amount">$100.00</span>
+              <span className="amount">7</span>
             </li>
           </ul>
 
